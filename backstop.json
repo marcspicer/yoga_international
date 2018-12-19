@@ -18,8 +18,8 @@
     {
       "label": "BackstopJS Homepage",
       "cookiePath": "backstop_data/engine_scripts/cookies.json",
-      "url": "./public/index.html",
-      "referenceUrl": "",
+      "url": "http://127.0.0.1:5000",
+      "referenceUrl": "http://127.0.0.1:5000",
       "readyEvent": "",
       "readySelector": "",
       "delay": 0,

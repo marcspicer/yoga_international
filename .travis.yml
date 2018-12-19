@@ -1,9 +1,16 @@
-addons:
-  chrome: stable
 language: node_js
 node_js:
-  - 8
-install:
-  - npm install
+  - "stable"
+cache:
+  directories:
+  - node_modules
 script:
-  - npm run build && npm run test
+  - npm install
+  - npm run build
+  - cp -R ./build ./client/
+  - rm -R ./build
+  - cd client
+  - npm install
+  - node server.js &
+  - cd ..
+  - npm run test

@@ -11,7 +11,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "backstop test",
+    "test": "backstop reference && backstop test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
